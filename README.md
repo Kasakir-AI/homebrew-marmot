@@ -1,9 +1,18 @@
-# Marmot Homebrew Tap 🐿️
+# Marmot Homebrew Tap 🐿️ (moved)
 
-Install [Marmot](https://github.com/Kasakir-AI/Marmot) on **macOS 26 (Tahoe) or later**:
+Marmot now lives in the [Kasakir-AI tap](https://github.com/Kasakir-AI/homebrew-tap):
 
 ```sh
-brew install --cask Kasakir-AI/marmot/marmot
+brew install --cask kasakir-ai/tap/marmot
 ```
 
-**On macOS 13–15?** This Homebrew cask is not supported. Download `Marmot-3.2.0.zip` from the [Marmot 3.2.0 release](https://github.com/Kasakir-AI/Marmot/releases/tag/v3.2.0), unzip it, and drag **Marmot.app** into **Applications**.
+**Already installed from this tap?** `brew update` tells you about the move. Finish it with:
+
+```sh
+brew tap kasakir-ai/tap
+brew trust kasakir-ai/tap/marmot
+brew reinstall --cask kasakir-ai/tap/marmot
+brew untap kasakir-ai/marmot
+```
+
+Your Marmot settings are kept. This repository stays online so existing installs can find the new tap.
