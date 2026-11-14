@@ -10,7 +10,7 @@ brew install --cask kasakir-ai/tap/marmot
 
 ```sh
 brew tap kasakir-ai/tap
-brew trust kasakir-ai/tap/marmot
+brew trust --cask kasakir-ai/tap/marmot
 brew reinstall --cask kasakir-ai/tap/marmot
 brew untap kasakir-ai/marmot
 ```
